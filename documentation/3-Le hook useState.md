@@ -1,7 +1,7 @@
 ## 3. Le hook useState
 > - Le hook `useState` permet de gérer des `états` dans un composant fonctionnel.
 > - Il prend en paramètre la `valeur initiale` de l'état et retourne un `tableau` contenant la `valeur actuelle` de l'état et une `fonction` pour la `mettre à jour`.
-> - La `valeur actuelle` de l'état peut être `lue` et `modifiée` en utilisant la `fonction` retournée par `useState`.
+> - La `valeur actuelle` de l'état peut-être `lue` et `modifiée` en utilisant la `fonction` retournée par `useState`.
 > - Le hook `useState` peut être utilisé plusieurs fois dans un composant pour gérer plusieurs états.
 > - Par exemple, on peut utiliser `useState` pour gérer un `compteur` dans un composant fonctionnel.
 

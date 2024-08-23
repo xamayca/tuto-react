@@ -3,9 +3,9 @@ import {useState} from "react";
 function CountButton() {
 
     const [person, setPerson] = useState({
-        firstName: 'xamayca',
-        lastName: 'Madshad',
-        age: 666
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 30
     })
 
     const [count, setCount] = useState(0)

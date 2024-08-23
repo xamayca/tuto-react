@@ -24,7 +24,7 @@ Done. Now run:
   npm install
   npm run dev
 ```
-> - Maintenant vous êtes invité à vous rendre dans le dossier du projet et à installer les dépendances du projet :
+> - Maintenant, vous êtes invité à vous rendre dans le dossier du projet et à installer les dépendances du projet :
 ```bash
 cd nom-du-projet
 npm install

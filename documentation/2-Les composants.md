@@ -27,7 +27,30 @@ function Title() {
 ```
 > - Dans cet exemple, nous avons ajouté un objet `style` à l'élément `h1` pour définir la couleur du texte et la taille de la police.
 > - Il est important de comprendre que la balise `style` est un objet JavaScript qui contient les propriétés CSS à appliquer à l'élément.
+> - Nous pouvons également utiliser des `conditions` avec notre composant de titre pour afficher ou masquer le texte :
+```jsx
+function App() {
+    
+    return <>
+        <Title color="green">Mon composant personalisé</Title>
+        <Title color="red" hidden={true}>Mon composant personalisé</Title>
+        <TodoList />
+        <CountButton />
+        <Form />
+    </>
+}
 
+function Title({ color, hidden, children }) {
+    if (hidden) { return null; }
+
+    return (
+        <h1 style={{ color }}>{children}</h1>
+    );
+}
+```
+> - Dans cet exemple, nous avons ajouté une `condition` pour afficher ou masquer le texte en fonction de la propriété `hidden`.
+> - Si la propriété `hidden` est `true`, le composant de titre retourne `null`, sinon il affiche le texte.
+> - A la place de hidden on pourrait par exemple faire aussi d'autres conditions comme `if (color === 'red') { return null; }` pour masquer le texte si la couleur est rouge.
 ## 2.1 Les propriétés (props)
 > - Les propriétés (ou props) sont des données passées à un composant lors de son utilisation.
 > - Par exemple, nous pouvons passer une propriété `text` et une propriété `color` à notre composant de titre :
