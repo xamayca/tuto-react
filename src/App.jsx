@@ -1,16 +1,18 @@
 import TodoList from "./components/TodoList.jsx";
 import CountButton from './components/CountButton.jsx'
 import Form from './components/Form.jsx'
+import ParentComponent from "./components/ParentComponent.jsx";
 
 function App() {
 
  return <>
-    <Title color="green">Mon composant personalisé</Title>
-    <Title color="red" hidden={true}>Mon composant personalisé rouge qui conditioné hidden</Title>
-    <Title color="blue">Mon composant personalisé bleu conditioné bleu</Title>
-    <TodoList />
-    <CountButton />
-    <Form />
+     <Title color="green">Mon composant personalisé</Title>
+     <Title color="red" hidden={true}>Mon composant personalisé rouge qui conditioné hidden</Title>
+     <Title color="blue">Mon composant personalisé bleu conditioné bleu</Title>
+     <TodoList />
+     <CountButton />
+     <Form />
+     <ParentComponent />
  </>
 }
 
