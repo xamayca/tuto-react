@@ -1,9 +1,14 @@
 function ChildComponent({ message, onChange }) {
+
+    const handleClick = () => {
+        onChange('Hello from Child!');
+    };
+
     return (
         <div>
             <h2>Child Component</h2>
             <p>{message}</p>
-            <button onClick={() => onChange('Hello from Child!')}>Change Message</button>
+            <button onClick={handleClick}>Change Message</button>
         </div>
     );
 }
