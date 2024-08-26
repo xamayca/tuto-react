@@ -6,6 +6,7 @@ import SearchBar from "./components/product/SearchBar.jsx";
 import {ProductTable} from "./components/product/ProductTable.jsx";
 import {useState} from "react";
 import {InputTextWithCooldown} from "./components/useeffects/inputTextWithCooldown.jsx";
+import {SquareCalculator} from "./SquareCalculator.jsx";
 
 const PRODUCTS = [
     {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -51,6 +52,7 @@ function App() {
      />
      <ProductTable products={visibleProducts}/>
      <InputTextWithCooldown />
+     <SquareCalculator />
  </>
 }
 
