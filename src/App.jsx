@@ -5,6 +5,7 @@ import ParentComponent from "./components/ParentComponent.jsx";
 import SearchBar from "./components/product/SearchBar.jsx";
 import {ProductTable} from "./components/product/ProductTable.jsx";
 import {useState} from "react";
+import {InputTextWithCooldown} from "./components/useeffects/inputTextWithCooldown.jsx";
 
 const PRODUCTS = [
     {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -49,6 +50,7 @@ function App() {
          onStockedOnlyChange={setShowStockedOnly}
      />
      <ProductTable products={visibleProducts}/>
+     <InputTextWithCooldown />
  </>
 }
 
